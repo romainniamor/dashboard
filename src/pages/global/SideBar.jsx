@@ -149,8 +149,8 @@ const SideBar = () => {
               setSelected={setSelected}
             />
             <Item
-              title="FAQ Page"
-              to="/"
+              title="Documentation"
+              to="/documentation"
               icon={<HelpOutlineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
@@ -158,28 +158,28 @@ const SideBar = () => {
 
             <Item
               title="Bar Chart"
-              to="/"
+              to="/bar-chart"
               icon={<BarChartOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Pie Chart"
-              to="/"
+              to="/pie-chart"
               icon={<PieChartOutlineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Line Chart"
-              to="/"
+              to="/line-chart"
               icon={<TimelineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Geography Chart"
-              to="/"
+              to="/geo-chart"
               icon={<MapOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
