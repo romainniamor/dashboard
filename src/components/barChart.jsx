@@ -35,6 +35,11 @@ const BarChart = ({ isDashboard }) => {
             fill: colors.grey[100],
           },
         },
+        grid: {
+          line: {
+            strokeWidth: isDashboard ? 0 : 0.5,
+          },
+        },
         legends: {
           text: {
             fill: colors.grey[100],

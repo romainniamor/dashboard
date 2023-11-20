@@ -3,7 +3,7 @@ import { Box, IconButton, useTheme, Typography, Divider } from "@mui/material";
 import { tokens } from "../theme";
 import { mockLineData as data } from "../data/data";
 
-const LineChart = ({ isDashBoard = false }) => {
+const LineChart = ({ isDashboard = false }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   return (
@@ -36,13 +36,18 @@ const LineChart = ({ isDashBoard = false }) => {
             fill: colors.grey[100],
           },
         },
+        grid: {
+          line: {
+            strokeWidth: isDashboard ? 0 : 0.5,
+          },
+        },
         tooltip: {
           container: {
             color: colors.primary[500],
           },
         },
       }}
-      colors={isDashBoard ? { datum: "color" } : { scheme: "nivo" }}
+      colors={isDashboard ? { datum: "color" } : { scheme: "nivo" }}
       margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
       xScale={{ type: "point" }}
       yScale={{
@@ -60,7 +65,7 @@ const LineChart = ({ isDashBoard = false }) => {
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: isDashBoard ? "" : "transportation",
+        legend: isDashboard ? "" : "transportation",
         legendOffset: 36,
         legendPosition: "middle",
       }}
@@ -68,7 +73,7 @@ const LineChart = ({ isDashBoard = false }) => {
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: isDashBoard ? "" : "count",
+        legend: isDashboard ? "" : "count",
         legendOffset: -40,
         legendPosition: "middle",
       }}
