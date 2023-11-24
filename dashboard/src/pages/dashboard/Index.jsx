@@ -11,7 +11,7 @@ import TrafficIcon from "@mui/icons-material/Traffic";
 import LineChart from "../../components/linechart";
 import GeographyChart from "../../components/geoChart";
 import BarChart from "../../components/barChart";
-import ProgressCircle from "../../components/ProgressCircle";
+
 import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 
 const DashBoard = () => {
@@ -42,7 +42,6 @@ const DashBoard = () => {
           <StatBox
             title="12,361"
             subtitle="Emails Sent"
-            progress="0.75"
             increase="+14%"
             icon={
               <EmailIcon
@@ -61,7 +60,6 @@ const DashBoard = () => {
           <StatBox
             title="431,225"
             subtitle="Sales Obtained"
-            progress="0.50"
             increase="+21%"
             icon={
               <TrendingUpIcon
@@ -80,7 +78,6 @@ const DashBoard = () => {
           <StatBox
             title="32,441"
             subtitle="New Clients"
-            progress="0.30"
             increase="+5%"
             icon={
               <PersonAddIcon
@@ -99,7 +96,6 @@ const DashBoard = () => {
           <StatBox
             title="1,325,134"
             subtitle="Traffic Received"
-            progress="0.80"
             increase="+43%"
             icon={
               <TrafficIcon
@@ -160,7 +156,7 @@ const DashBoard = () => {
             display="flex"
             justifyContent="space-between"
             alignItems="center"
-            borderBottom={`4px solid ${colors.primary[500]}`}
+            borderBottom={`1px solid ${colors.grey[700]}`}
             colors={colors.grey[100]}
             p="15px"
           >
@@ -174,7 +170,7 @@ const DashBoard = () => {
               display="flex"
               justifyContent="space-between"
               alignItems="center"
-              borderBottom={`4px solid ${colors.primary[500]}`}
+              borderBottom={`1px solid ${colors.grey[700]}`}
               p="15px"
             >
               <Box>
@@ -217,7 +213,6 @@ const DashBoard = () => {
             alignItems="center"
             mt="25px"
           >
-            <ProgressCircle size="125" />
             <Typography
               variant="h5"
               color={colors.greenAccent[500]}

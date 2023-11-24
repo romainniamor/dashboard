@@ -48,11 +48,11 @@ const Documentation = () => {
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h3">
             <Link
-              to="https://fr.react.dev/"
+              to="https://mui.com/material-ui/customization/theming/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              React
+              Material Ui
             </Link>
           </Typography>
         </AccordionSummary>
